@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    /*这种需要最新的浏览器才支持*/
+     body {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        height: 100vh;/*高度为浏览器高度最大值*/
+    }
+    /*这种方法的不用确定div的宽高*/
+ 
+    /*这种是最常用的，但是要e799bee5baa6e4b893e5b19e31333363366233确定某个div的宽高值*/
+     
+    body .box {
+        position: absolute;
+        background: #efefef;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;/*宽度值的负一半*/
+        margin-top: -50px;/*高度值的负一半*/
+    }
+    </style>
+</head>
+ 
+<body>
+    <div class="box">
+        这里是内容
+    </div>
+</body>
+ 
+</html>
